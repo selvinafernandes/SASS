@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  
+}
+html,body{
+  margin: 0;
+  padding: 0;
+  color:#51352E;
+}
+
+body{
+  font-family: $font-pack;
+  font-size: 1.2rem;
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+  }
+}
+
+
+
+.role-italic{
+	font-style:italic;
+}

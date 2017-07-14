@@ -1,0 +1,46 @@
+@mixin links($link,$hover){
+	&:link{
+		color:$link;
+		}
+	&:hover{
+		color:$hover;
+		}
+		}
+
+@mixin padding($top,$left,$bottom,$right){
+
+	padding-top:$top;
+	padding-left:$left;
+	padding-bottom:$bottom;
+	padding-right:$right;
+	
+	}
+	
+
+@mixin media{
+	@media(max-width:480px){
+		margin:0;
+		padding:20px 20px 20px 20px;
+		width:100%;
+		text-align:center;
+		display:block;
+		}
+}
+
+@mixin images{
+	@media(max-width:480px){
+		display:inline;
+		width:40%;
+	
+	}
+}
+
+@for $i from 1 through 9 {
+	.images-link:nth-child(#{$i}) {
+		border-radius:8px;
+		}
+}
+		
+
+	
+
